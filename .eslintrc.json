@@ -1,5 +1,9 @@
 {
   "extends": ["airbnb", "prettier"],
   "plugins": ["prettier"],
-  "rules": {}
+  "rules": {
+    "no-plusplus": "off",
+    "consistent-return": "off",
+    "no-else-return": "off"
+  }
 }
