@@ -1,4 +1,4 @@
-import { experiments } from 'webpack';
+/* eslint-disable no-undef */
 import Ship from '../ship';
 
 test.skip('get correct length from ship with length 3', () => {
