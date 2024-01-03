@@ -8,19 +8,21 @@ class Ship {
   getLength() {
     return this.length;
   }
+
   getHits() {
     return this.hitNumber;
   }
+
   getSunk() {
     return this.sunk;
   }
 
   hit() {
-    return (this.hitNumber += 1);
+    this.hitNumber += 1;
   }
 
   isSunk() {
-    return this.getLength() === this.getHits() ? true : false;
+    return this.getLength() === this.getHits();
   }
 }
 
