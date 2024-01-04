@@ -16,8 +16,9 @@ class AI extends Player {
     while (!attacked) {
       const x = Math.floor(Math.random() * 10);
       const y = Math.floor(Math.random() * 10);
-      if (this.checkHits(enemy).length > 0) {
-        for (const hit of this.checkHits(enemy)) {
+      const hits = this.checkHits(enemy);
+      if (hits.length > 0) {
+        for (const hit of hits) {
           if (!isEqual(hit, [x, y])) {
             enemy.gameboard.receiveAttack(x, y);
             attacked = true;
