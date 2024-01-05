@@ -4,6 +4,14 @@
   "rules": {
     "no-plusplus": "off",
     "consistent-return": "off",
-    "no-else-return": "off"
+    "no-else-return": "off",
+    "import/extensions": "off",
+    "no-param-reassign": "off",
+    "class-methods-use-this": "off",
+    "import/no-extraneous-dependencies": "off"
+  },
+  "env": {
+    "browser": true,
+    "node": true
   }
 }
