@@ -1,21 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&display=swap');
+
+:root {
+  font-size: 62.5%;
+}
 body {
+  font-family: 'Poppins', 'Montserrat', sans-serif;
   height: 100vh;
   margin: 0;
-  display: flex;
-
-  justify-content: center;
+  background: linear-gradient(
+    120deg,
+    rgba(47, 47, 47, 1) 1%,
+    rgba(23, 23, 23, 1) 50%
+  );
+  color: whitesmoke;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+header {
+  font-size: 7rem;
+  justify-self: baseline;
+  text-align: center;
+  margin: 10px 0 150px 0;
 }
 
 .container {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  align-items: baseline;
   gap: 15rem;
 }
 
@@ -24,4 +34,36 @@ main {
   display: grid;
   grid-template: repeat(10, 1fr) / repeat(10, 1fr);
   width: 400px;
+}
+
+.cell {
+  background-color: #161616;
+}
+
+p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+footer {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  margin-top: 150px;
+  gap: 5px;
+  color: white;
+}
+#github-logo {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 75px;
+  top: -5px;
+}
+
+a {
+  color: lightblue;
+  text-decoration: none;
+  position: relative;
 }
